@@ -1,8 +1,10 @@
 package study.junghoon.app.aac_study
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
+import study.junghoon.app.aac_study.plain.PlainActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         go_to_plain_activity.setOnClickListener {
-
+            startActivity(Intent(this, PlainActivity::class.java))
         }
 
     }
